@@ -1,0 +1,17 @@
+.link1 {
+  color: white;
+}
+
+.link1:hover {
+  color: white;
+  text-decoration: line-through 3px #232526 !important;
+  cursor: pointer;
+}
+
+.btn1 {
+  color: white;
+}
+
+.btn1:hover {
+  color: #232526;
+}

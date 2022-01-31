@@ -1,0 +1,52 @@
+.btnfaq {
+  background-color: transparent;
+  color: black;
+  position: relative;
+  display: inline-block;
+  text-align: right;
+  height: 3rem;
+  margin-top: 0;
+  margin-left: 90%;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  border-style: none;
+  outline-style: none;
+  outline-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.btnfaq:hover {
+  color: #232526;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  border-style: none;
+  outline-style: none;
+  outline-color: transparent;
+  background-color: transparent;
+}
+
+.btnfaq:focus {
+  color: #232526;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  border-style: none;
+  outline-style: none;
+  outline-color: transparent;
+  outline: none;
+  border: none;
+  background-color: transparentc;
+}
+
+.linkfaq {
+  color: black;
+}
+
+.linkfaq:hover {
+  color: black;
+  text-decoration: line-through 3px #232526 !important;
+  cursor: pointer;
+}

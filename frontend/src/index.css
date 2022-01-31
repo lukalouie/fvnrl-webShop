@@ -1,0 +1,77 @@
+.container {
+  min-width: 100%;
+  /*margin: 0;*/
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  max-width: auto;
+  background: no-repeat center center fixed;
+  background-size: cover;
+  background-color: black;
+  font-family: "Josefin Slab", Regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Josefin Slab", Regular;
+}
+
+main {
+  max-width: auto;
+  min-height: 80vh;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.btnCreate {
+  margin-left: 63%;
+}
+
+.simpleButton {
+  border-radius: 5px;
+  color: white;
+  border: 2px solid transparent;
+  background-color: black;
+  font-weight: bold;
+}
+
+.simpleButton:hover {
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  animation: flash 1s;
+}
+
+@keyframes flash {
+  50%
+  {
+                  color: transparent;
+  }
+  100%{
+                  color: white;
+  }
+}
+
+.simpleButton2 {
+  border: none;
+  box-shadow: none;
+  color: lightgray;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.simpleButton2:hover {
+  background-color: transparent;
+  color: white;
+  font-weight: bolder;
+  animation: flash 1s;
+}

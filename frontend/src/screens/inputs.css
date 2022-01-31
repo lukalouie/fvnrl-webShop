@@ -1,0 +1,192 @@
+.inputex,
+.spanex,
+.labelex,
+.textareaex {
+  font-family: "Josefin Slab", Regular;
+  display: block;
+  padding-top: 3rem;
+  border: none;
+  font-size: 20px;
+  color: white;
+}
+
+.inputex,
+.spanex,
+.labelex,
+.textareaex::placeholder {
+  color: white;
+}
+
+.textareaex:focus,
+.inputex:focus {
+  outline: 0;
+  border: none;
+  color: white;
+}
+/* Question */
+
+.inputex.question,
+.textareaex.question {
+  font-size: 16px;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  background: transparent;
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+  color: white;
+}
+/* Underline and Placeholder */
+
+.inputex.question + .labelex,
+.textareaex.question + .labelex {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding-top: 3rem;
+  margin: 0;
+  width: 10%;
+  border-top: 1px solid white;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+  color: white;
+}
+
+.inputex.question:focus + .labelex,
+.textareaex.question:focus + .labelex {
+  width: 80%;
+  color: white;
+}
+
+.inputex.question:focus,
+.inputex.question:valid {
+  padding-top: 0;
+  color: white;
+}
+
+.textareaex.question:valid,
+.textareaex.question:focus {
+  border: none;
+  padding-top: 3rem;
+  margin-top: 20px;
+  color: white;
+}
+
+.inputex.question:focus + .labelex > .spanex,
+.inputex.question:valid + .labelex > .spanex {
+  border: none;
+  top: -100px;
+  font-size: 20px;
+  color: white;
+}
+
+.textareaex.question:focus + .labelex > .spanex,
+.textareaex.question:valid + .labelex > .spanex {
+  border: none;
+  top: -150px;
+  font-size: 20px;
+  color: white;
+}
+
+.inputex.question:valid + .labelex,
+.textareaex.question:valid + .labelex {
+  border-color: white;
+  color: white;
+}
+
+.inputex.question:invalid,
+.textareaex.question:invalid {
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+
+.inputex.question + .labelex > .spanex,
+.textareaex.question + .labelex > .spanex {
+  margin: 0;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  top: -66px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  border: none;
+}
+
+.inputex[type="submit"] {
+  -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: block;
+  opacity: 0;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.inputex::placeholder {
+  color: white;
+}
+
+.inputex[type="submit"]:hover {
+  background: #eee;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.inputex[type="submit"]:active {
+  background: #999;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.inputex[type="password"]:focus {
+  outline: 0;
+  background-color: transparent !important;
+  color: white;
+}
+
+.inputex.question:valid ~ .inputex[type="submit"],
+.textareaex.question:valid ~ .inputex[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+  border: none;
+  color: white;
+}
+
+.inputex.question:invalid ~ .inputex[type="submit"],
+.textareaex.question:invalid ~ .inputex[type="submit"] {
+  display: none;
+  border: none;
+  color: white;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+.inputex:-webkit-autofill,
+.inputex:-webkit-autofill:hover,
+.inputex:-webkit-autofill:focus,
+.textareaex:-webkit-autofill,
+.textareaex:-webkit-autofill:hover,
+.textareaex:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px black inset !important;
+}

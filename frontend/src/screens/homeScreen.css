@@ -1,0 +1,64 @@
+
+.homeDiv {
+  position: relative;
+  text-align: center;
+}
+
+.h1Home {
+  font-size: 60pt;
+}
+.homePic {
+  height: 70vh;
+}
+.homePic2 {
+  height: 85vh;
+  margin-left: 2vh;
+  object-fit: contain;
+  color: white !important;
+}
+h4 {
+  margin-left: -15vh;
+  color: white !important;
+}
+
+h4:hover {
+  text-decoration: line-through 3px #232526 !important;
+  cursor: pointer;
+}
+
+h2 {
+  color: white !important;
+  text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: white;
+  border: thin;
+  border-color: white;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 85px;
+  color: white;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 85px;
+  font-weight: bolder;
+  color: white;
+}
+
+.car {
+  border-width: 2px;
+  border-color: white;
+  border-radius: 15px;
+  background-color: black;
+}
+
